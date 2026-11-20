@@ -1,0 +1,17 @@
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  transition: background-color 0.3s ease, color 0.3s ease; /*[cite: 5] */
+}
+
+body.dark-theme {
+  background-color: #1a1a1a; /*[cite: 5] */
+  color: #f5f5f5; /*[cite: 5] */
+}
+
+@media (prefers-color-scheme: dark) { /*[cite: 5] */
+  body {
+    background-color: #1a1a1a; /*[cite: 5] */
+    color: #f5f5f5; /*[cite: 5] */
+  }
+}

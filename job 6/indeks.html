@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamus Valorant - Istilah &amp; Role Dasar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-flex">
+      <div>
+        <h1>Kamus Valorant</h1>
+        <h5>By:Bernadus Savio</h5>
+        <p>Kumpulan istilah, callout, dan role dasar untuk pemula</p>
+      </div>
+      <button type="button" id="themeToggle" class="btn-theme">Mode Terang</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Pencarian & Filter Kategori -->
+    <section class="controls">
+      <input type="text" id="searchInput" placeholder="Cari istilah (contoh: Spike, Eco, Duelist, Flank)...">
+      <div class="filter-group" id="filterButtons">
+        <button type="button" class="filter-btn active" data-category="Semua">Semua</button>
+        <button type="button" class="filter-btn" data-category="Role">Role</button>
+        <button type="button" class="filter-btn" data-category="Ekonomi">Ekonomi</button>
+        <button type="button" class="filter-btn" data-category="Strategi">Strategi</button>
+        <button type="button" class="filter-btn" data-category="Objektif">Objektif</button>
+      </div>
+    </section>
+
+    <!-- Daftar Istilah -->
+    <section id="kamusList" class="kamus-grid" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

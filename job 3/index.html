@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Nama Lengkap Anda</h1>
+    <p>Web Developer / Pelajar RPL</p>
+    <button type="button" id="theme-toggle">Ganti Mode</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Tentang Saya</h2>
+      <p>Deskripsi singkat profil dan keahlian Anda.</p>
+    </section>
+
+    <section>
+      <h2>Pendidikan & Pengalaman</h2>
+      <p>Riwayat sekolah, proyek, atau pengalaman organisasi.</p>
+    </section>
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+    });
+  </script>
+</body>
+</html>
